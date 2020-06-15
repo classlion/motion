@@ -1,0 +1,36 @@
+@mixin button-variant ($color, $bg, $border-color) {
+    color: $color;
+    background-color: $bg;
+    border-color: $border-color;
+    &:hover {
+        color: $bg;
+        background-color: $color;
+        border-color: $border-color;
+    }
+}
+
+;
+.button {
+    display: inline-block;
+    margin: 0;
+    border-radius: 0;
+    border: 1px solid transparent;
+    font-size: 16px;
+    padding: 8px 16px;
+    outline: none;
+    text-transform: none;
+    text-align: center;
+    text-decoration: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    &:hover {
+        text-decoration: none;
+    }
+    &-primary {
+        @include button-variant (white, tomato, tomato)
+    }
+    &-long {
+        width: 100%;
+    }
+}

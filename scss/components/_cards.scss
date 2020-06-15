@@ -1,0 +1,19 @@
+.card {
+    text-align: center;
+    &-image {
+        height: 200px;
+        ;
+    }
+    &-description {
+        display: inline-block;
+        padding: 0 15px;
+    }
+}
+
+.card-title {}
+
+.card-description {}
+
+.card-image {}
+
+.card-image>img {}
