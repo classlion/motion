@@ -7,9 +7,7 @@ html {
   font-size: 14px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
-  background-color: #ffffff;
   line-height: 18px;
-  color: #5c646e;
 }
 
 body {
@@ -32,10 +30,8 @@ body {
 }
 
 a {
-  color: #ff1744;
   text-decoration: underline;
 }
-
 a:hover {
   text-decoration: none;
 }
@@ -56,7 +52,8 @@ figure {
 
 * + p,
 * + ul,
-* + ol * + figure {
+* + ol,
+* + figure {
   margin-top: 16px;
 }
 
@@ -137,58 +134,6 @@ h6 {
   padding: 10px;
 }
 
-.row-large {
-  margin: -50;
-}
-
-.row-large > .column {
-  padding: 50px;
-}
-
-.column-expertise {
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 39px;
-  margin-bottom: 39px;
-}
-
-.work-navigation {
-  text-align: center;
-}
-
-.row > .column-gallert {
-  padding: 0px;
-}
-
-.brand {
-  margin-top: 47px;
-}
-
-.row-brand {
-  margin: -35px;
-  justify-content: center;
-}
-
-.row-brand > .column {
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.column-logo {
-  margin-right: 100px;
-}
-
-.row > .grid-item-expertise:not(:nth-child(3n)) {
-  border-right: 1px solid #dfdfdf;
-}
-
-.row > .grid-item-expertise-bottom {
-  border-bottom: 1px solid #dfdfdf;
-}
-
 .width-1-1 {
   width: 100%;
 }
@@ -225,26 +170,6 @@ h6 {
 
 .head-nav {
   display: block;
-}
-
-.nav .nav-item {
-  color: black;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  padding: 0 17px;
-}
-
-.nav .nav-item:hover {
-  -webkit-text-decoration: underline tomato 3px;
-  text-decoration: underline tomato 3px;
-}
-
-.nav .is-active {
-  -webkit-text-decoration: underline tomato 3px;
-  text-decoration: underline tomato 3px;
-}
-
-.head-nav {
   float: right;
 }
 
@@ -262,7 +187,7 @@ h6 {
   text-decoration: none;
   font-size: 1.4em;
   font-weight: 400;
-  margin: 0px 20px 0px 20px;
+  margin: 0 20px 0 20px;
   display: block;
   padding: 1.1em 0.3em;
 }
@@ -276,24 +201,6 @@ h6 {
 .header {
   padding-bottom: 0;
   margin-top: 20px;
-}
-
-.nav .list-nav {
-  list-style: none;
-  padding-left: 30x;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.list-contacts .list-content {
-  display: flex;
-  align-items: flex-start;
-}
-
-.list-contacts .list-content .list-icon {
-  margin-right: 8px;
-  width: 20px;
-  flex-shrink: 0;
 }
 
 .list {
@@ -395,117 +302,35 @@ h6 {
   width: 100%;
   border: 1px solid black;
   padding: 10px;
-  background-color: #fff;
-  color: #666;
+  background-color: white;
+  color: grey;
   margin: 0;
   border-radius: 0;
   font-size: inherit;
+}
+.input:focus, .input:disabled,
+.select:focus,
+.select:disabled,
+.textarea:focus,
+.textarea:disabled {
+  outline: none;
+  background-color: white;
+  color: grey;
+  border-color: silver;
+}
+.input::placeholder,
+.select::placeholder,
+.textarea::placeholder {
+  color: silver;
 }
 
 .input {
   height: 40px;
 }
 
-.input:focus,
-.select:focus,
-.textarea:focus {
-  outline: none;
-  background-color: #fff;
-  color: #666;
-  border-color: silver;
-}
-
-.input:disabled,
-.select:disabled,
-.textarea:disabled {
-  background-color: #f8f8f8;
-  color: #999;
-  border-color: #999;
-}
-
-.input::placeholder,
-.textarea::placeholder {
-  color: #999;
-}
-
 .textarea {
   resize: none;
   height: 200px;
-}
-
-.input-danger,
-.input-danger:focus {
-  color: red;
-  border-color: red;
-}
-
-.input-success,
-.input-success:focus {
-  color: green;
-  border-color: green;
-}
-
-.input-blank {
-  background-color: none;
-  border-color: transparent;
-}
-
-.input-blank:focus {
-  background-color: #e5e5e5;
-  border-style: dashed;
-}
-
-.form-error-message {
-  color: red;
-  position: absolute;
-  bottom: -16px;
-  display: none;
-}
-
-.input:valid:not(:placeholder-shown) {
-  border-color: green;
-}
-
-.input:invalid:not(:placeholder-shown) {
-  border-color: red;
-}
-
-.input:invalid:not(:placeholder-shown) + .form-error-message {
-  display: block;
-}
-
-.form-icon {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 40px;
-  color: #999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.form-icon:hover {
-  color: #666;
-}
-
-.form-icon:not(a):not(button):not(input) {
-  pointer-events: none;
-}
-
-.form-icon-flip {
-  right: 0;
-  left: auto;
-}
-
-.form-icon:not(.form-icon-flip) ~ .input {
-  padding-left: 40px !important;
-}
-
-.form-icon-flip ~ .input {
-  padding-right: 40px !important;
 }
 
 @font-face {

@@ -1,31 +1,14 @@
+$hover-color:tomato;
+$static-color: #6C6C6C;
+$zero: 0;
 .head-nav {
-    display: block
-}
-
-.nav .nav-item {
-    color: black;
-    font-weight: 400;
-    letter-spacing: 0.2px;
-    padding: 0 17px;
-}
-
-.nav .nav-item:hover {
-    -webkit-text-decoration: underline tomato 3px;
-    text-decoration: underline tomato 3px;
-}
-
-.nav .is-active {
-    -webkit-text-decoration: underline tomato 3px;
-    text-decoration: underline tomato 3px;
-}
-
-.head-nav {
+    display: block;
     float: right;
 }
 
 .head-nav ul {
-    margin: 0;
-    padding: 0;
+    margin: $zero;
+    padding: $zero;
 }
 
 .head-nav ul li {
@@ -33,17 +16,17 @@
 }
 
 .head-nav ul li a {
-    color: #6C6C6C;
+    color: $static-color;
     text-decoration: none;
     font-size: 1.4em;
     font-weight: 400;
-    margin: 0px 20px 0px 20px;
+    margin: $zero 20px $zero 20px;
     display: block;
     padding: 1.1em 0.3em;
 }
 
 .head-nav ul li a:hover,
 .head-nav ul li.active a {
-    border-bottom: 3px solid tomato;
-    color: tomato;
+    border-bottom: 3px solid $hover-color;
+    color: $hover-color;
 }

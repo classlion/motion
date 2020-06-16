@@ -6,13 +6,11 @@ html {
     font-size: 14px;
     font-weight: 400;
     font-family: "Roboto", sans-serif;
-    background-color: #ffffff;
     line-height: 18px;
-    color: #5c646e;
 }
 
 body {
-    margin: 0;
+    margin: $zero;
 }
 
 .container {
@@ -31,12 +29,10 @@ body {
 }
 
 a {
-    color: #ff1744;
     text-decoration: underline;
-}
-
-a:hover {
-    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 img {
@@ -55,7 +51,8 @@ figure {
 
 *+p,
 *+ul,
-*+ol *+figure {
+*+ol,
+*+figure {
     margin-top: 16px;
 }
 
