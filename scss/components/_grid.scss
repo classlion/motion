@@ -12,8 +12,7 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: -10px;
-}
-
-.row>.column {
-    padding: 10px;
+    >.column {
+        padding: 10px;
+    }
 }
